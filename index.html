@@ -28,12 +28,84 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+
+                <!-- tooltip -->
                 <div class="col-md-4 col-xl-2 my-4">
-                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                    <a class="btn btn-lg btn-info" data-target="#reserveModal" data-toggle="modal" data-placement="bottom" data-html="true">Reserve Campsite</a>
                 </div>
+                <!-- tooltip end -->
+
+
             </div>
         </div>
     </header>
+
+    <!-- reserveModal -->
+
+    <div id="reserveModal" class="xmodal modal-lg">
+        <div class="row row-content align-center">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row">
+                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col-sm-6 ">
+                                    <select class="form-control " name="numCampers " id="numCampers ">
+                                    <option value=" ">select</option>
+                                    <option value="1 ">1</option>
+                                    <option value="2 ">2</option>
+                                    <option value="3 ">3</option>
+                                    <option value="4 ">4</option>
+                                    <option value="5 ">5</option>
+                                    <option value="6 ">6</option>
+                                 </select>
+                                </div>
+                            </div>
+
+                            <div class="row form-group ">
+                                <div class="col-sm-6">
+                                    <label class="col col-form-label" for="date">Date</label>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy" />
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">Campsite Type</label>
+                                </div>
+
+                                <div class="col2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                         <input type="radio" name="siteType" id="siteTent" value="tent" checked> Tent
+                                    </label>
+                                    <label class="btn btn-primary">
+                                          <input type="radio" name="siteType" id="siteRv" value="rv"> RV
+                                     </label>
+                                </div>
+
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col ">
+                                    <a href="# "><button type="button " class="btn btn-secondary ">Cancel</button></a>
+                                    <a href="# "><button type="button " class="btn btn-primary ">Search</button></a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- reserveModal end -->
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -230,7 +302,7 @@
 
         <!-- card -->
 
-        <div class="row row-content align-center">
+        <!-- <div class="row row-content align-center">
             <div class="col col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
@@ -269,7 +341,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- card close -->
     </div>
 
@@ -306,11 +378,21 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
-    <script>
+    <!-- <script>
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
+    </script> -->
+
+    <script>
+        CheckMyCode = {
+            'key': 'jse9f3lkvm2',
+            'author': 'Greg Singleton',
+            'courseid': 'boot.nucamp',
+            'assignment': 'week3'
+        }
     </script>
+    <script src="https://sparrowweb.net/cmc/checkmycode.js"></script>
 
 
 </body>
