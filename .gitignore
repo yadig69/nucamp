@@ -1,4 +1,5 @@
 node_modules
+dist
 .vscode
 index.gradedweek3.html
 index.graded.html
