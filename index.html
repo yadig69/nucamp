@@ -44,10 +44,10 @@
     <!-- having trouble to remove white border -->
 
     <div id="reserveModal" class="modal modal-lg fade">
-        <div class="modal-dialog align-items-center">
+        <div class="modal-dialog modal-dialog-centered align-items-center">
             <div class="modal-content">
                 <div class="bg-info modal-header">
-                    <h3 class="text-white">Reserve a Campsite</h3>
+                    <h3 class="modal-title text-white">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -93,7 +93,7 @@
 
                         </div>
 
-                        <div class="modal-footer row form-group">
+                        <div class="modal-footer row form-group align-items-lg-start">
                             <div class="col">
                                 <a href="#"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button></a>
                                 <a href="#"><button type="submit" class="btn btn-primary">Search</button></a>
@@ -347,23 +347,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
-    <script>
-        $(function() {
-            $(".carousel").carousel({
-                interval: 2000
-            });
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
+    <script src="js/scripts.js">
     </script>
 
     <script>
