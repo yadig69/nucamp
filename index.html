@@ -44,19 +44,18 @@
     <!-- having trouble to remove white border -->
 
     <div id="reserveModal" class="modal modal-lg fade">
-        <div class="row row-content align-items-center">
-            <div class="col col-sm-6 mx-auto">
-                <div class="card">
-                    <div class="bg-info modal-header">
-                        <h3 class="text-white">Reserve a Campsite</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="reserveForm">
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label">Number of Campers</label>
-                                <div class="col-sm-6">
-                                    <select class="form-control " name="numCampers" id="numCampers">
+        <div class="modal-dialog align-items-center">
+            <div class="modal-content">
+                <div class="bg-info modal-header">
+                    <h3 class="text-white">Reserve a Campsite</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="reserveForm">
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col-sm-6">
+                                <select class="form-control " name="numCampers" id="numCampers">
                                     <option value=" ">Select...</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -65,46 +64,46 @@
                                     <option value="5">5</option>
                                     <option value="6">6</option>
                                  </select>
-                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row form-group ">
+                            <div class="col-sm-6">
+                                <label class="col-form-label" for="date">Date</label>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy" />
                             </div>
 
-                            <div class="row form-group ">
-                                <div class="col-sm-6">
-                                    <label class="col-form-label" for="date">Date</label>
-                                </div>
-                                <div class="col-sm-6 ">
-                                    <input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy" />
-                                </div>
+                        </div>
 
-                            </div>
+                        <div class="form-group row">
 
-                            <div class="form-group row">
-
-                                <label class="col-form-label col col-sm-6">Campsite Type</label>
+                            <label class="col-form-label col col-sm-6">Campsite Type</label>
 
 
-                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
+                            <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
                                          <input type="radio" name="siteType" id="siteTent" value="tent" checked> Tent
                                     </label>
-                                    <label class="btn btn-primary">
+                                <label class="btn btn-primary">
                                           <input type="radio" name="siteType" id="siteRv" value="rv"> RV
                                      </label>
-                                </div>
-
                             </div>
 
-                            <div class="row form-group">
-                                <div class="col">
-                                    <a href="#"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button></a>
-                                    <a href="#"><button type="submit" class="btn btn-primary">Search</button></a>
-                                </div>
+                        </div>
 
+                        <div class="modal-footer row form-group">
+                            <div class="col">
+                                <a href="#"><button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button></a>
+                                <a href="#"><button type="submit" class="btn btn-primary">Search</button></a>
                             </div>
-                        </form>
-                    </div>
+
+                        </div>
+                    </form>
                 </div>
             </div>
+
         </div>
 
     </div>
