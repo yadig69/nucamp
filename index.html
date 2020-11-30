@@ -30,11 +30,11 @@
                     <h2>a better way to camp</h2>
                 </div>
 
-                <!-- tooltip -->
+                <!-- reserve campsite button -->
                 <div class="col-md-4 col-xl-2 my-4">
-                    <a class="btn btn-lg btn-info" data-target="#reserveModal" data-toggle="modal" data-placement="bottom" data-html="true">Reserve Campsite</a>
+                    <a class="btn btn-lg btn-info" id="reserveButton" data-target="#reserveModal" data-toggle="modal" xdata-placement="bottom" xdata-html="true">Reserve Campsite</a>
                 </div>
-                <!-- tooltip end -->
+                <!-- reserve campsite button end -->
 
 
             </div>
@@ -47,8 +47,8 @@
     <div id="reserveModal" class="modal modal-lg fade">
         <div class="modal-dialog modal-dialog-centered align-items-center">
             <div class="modal-content">
-                <div class="bg-info modal-header">
-                    <h3 class="modal-title text-white">Reserve a Campsite</h3>
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -122,14 +122,14 @@
             <div class="collapse navbar-collapse" id="nucampNavBar">
                 <ul class="navbar-nav">
 
-                    <!-- Modal link -->
+                    <!-- login Modal link -->
 
                     <span class="navbar-text ml-auto">
-                            <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <a role="button" id="loginButton" data-toggle="modal" data-target="#loginModal">
                                 <i class="fa fa-sign-in"> </i> Login
                             </a>
                         </span>
-                    <!-- Modal link close -->
+                    <!-- login Modal link close -->
 
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
@@ -145,9 +145,9 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="bg-info modal-header">
+                <div class="modal-header">
                     <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" id="closeModal" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">

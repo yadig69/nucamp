@@ -14,3 +14,18 @@
          }
      });
  });
+
+ $('#reserveButton').on('hidden.bs.modal', function(e) {
+     $('#reserveButton').modal('show')
+ });
+
+
+ $('#loginModal').on('hidden.bs.modal', function(e) {
+     $('#loginModal').modal('show')
+ });
+
+ $('#closeModal').on('hidePrevented.bs.modal', function(e) {
+     $('#closeModal').modal('hide')
+ });
+
+ //  working on getting the login modal to stay hidden
